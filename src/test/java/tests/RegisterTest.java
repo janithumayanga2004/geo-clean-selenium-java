@@ -13,7 +13,7 @@ public class RegisterTest extends BaseTest {
         RegisterPage registerPage = new RegisterPage(driver);
 
 
-        registerPage.registerAdmin("Janith Admin", "janith16@geoclean.com", "0771234567", "Password3", "super_secret_key_123");
+        registerPage.registerAdmin("Janith Admin", "janith17@geoclean.com", "0771238567", "Password4", "super_secret_key_123");
 
         boolean isSuccess = registerPage.isRegistrationSuccess();
         Assert.assertTrue(isSuccess, "Registration Success message is not displayed!");

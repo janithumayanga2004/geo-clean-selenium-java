@@ -16,15 +16,15 @@ public class SiteTest extends BaseTest {
         // 2. Authentication
         LoginPage loginPage = new LoginPage(driver);
         System.out.println("Logging in to the system...");
-        loginPage.loginAsAdmin("janith16@geoclean.com", "Password3");
+        loginPage.loginAsAdmin("janith17@geoclean.com", "Password4");
 
         // 3. Navigation to Sites
         SitePage sitePage = new SitePage(driver);
         System.out.println("Navigating to Sites section...");
         sitePage.navigateToSites();
 
-        String initialSiteName = "Kandy";
-        String updatedSiteName = "neluwa";
+        String initialSiteName = "panadura";
+        String updatedSiteName = "makubura";
 
         // 4. CRUD Operations
         System.out.println("Step 1: Adding new site...");

@@ -13,7 +13,7 @@ public class DashboardTest extends BaseTest {
 
         driver.get("http://localhost:5173/login");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginAsAdmin("janith16@geoclean.com", "Password3");
+        loginPage.loginAsAdmin("janith17@geoclean.com", "Password4");
 
         DashboardPage dashboardPage = new DashboardPage(driver);
 

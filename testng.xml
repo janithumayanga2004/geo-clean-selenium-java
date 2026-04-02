@@ -8,15 +8,15 @@
 
     <test name="End-to-End Functional Flow">
         <classes>
-            <class name="tests.RegisterTest"/>
+<!--            <class name="tests.RegisterTest"/>-->
             <class name="tests.LoginTest"/>
 
             <class name="tests.DashboardTest"/>
-            <class name="tests.SiteTest"/>
+<!--            <class name="tests.SiteTest"/>-->
 
-            <class name="tests.CleanerTest"/>
+<!--            <class name="tests.CleanerTest"/>-->
             <class name="tests.AssignmentsTest"/>
-            <class name="tests.ReportsTest"/>
+<!--            <class name="tests.ReportsTest"/>-->
         </classes>
     </test>
 

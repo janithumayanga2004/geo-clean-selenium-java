@@ -13,19 +13,19 @@ public class CleanerTest extends BaseTest {
         // 1. Login
         driver.get("http://localhost:5173/login");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginAsAdmin("janith16@geoclean.com", "Password3");
+        loginPage.loginAsAdmin("janith17@geoclean.com", "Password4");
 
         // 2. Navigation
         CleanerPage cleanerPage = new CleanerPage(driver);
         System.out.println("Navigating to Staff Registry...");
         cleanerPage.navigateToStaffRegistry();
 
-        String fullName = "Amal Perera";
-        String updatedName = "Amal Silva";
+        String fullName = "sadun Perera";
+        String updatedName = "sadun Silva";
 
         // 3. Register
         System.out.println("Registering new cleaner...");
-        cleanerPage.registerCleaner(fullName, "amal@test.com", "0771234567", "Cleaner@123");
+        cleanerPage.registerCleaner(fullName, "sadun@test.com", "0772234567", "Cleaner@12334");
 
 
         System.out.println("Closing success notification...");

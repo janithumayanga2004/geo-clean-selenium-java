@@ -14,7 +14,7 @@ public class ReportsTest extends BaseTest {
         // 1. Login
         driver.get("http://localhost:5173/login");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginAsAdmin("janith16@geoclean.com", "Password3");
+        loginPage.loginAsAdmin("janith17@geoclean.com", "Password4");
 
         // 2. Navigation
         ReportsPage reportsPage = new ReportsPage(driver);
@@ -22,7 +22,7 @@ public class ReportsTest extends BaseTest {
         reportsPage.navigateToReports();
 
         // 3. Verify Summary Chips
-        Assert.assertTrue(reportsPage.isSummaryDisplayed(), "Summary chips පෙන්වනු නොලබයි!");
+        Assert.assertTrue(reportsPage.isSummaryDisplayed(), "Summary chips ");
         System.out.println("Current Stats: " + reportsPage.getSummaryStats());
 
         // 4. Date Filter Test (අද දිනය සඳහා)

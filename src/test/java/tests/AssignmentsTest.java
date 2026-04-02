@@ -1,3 +1,4 @@
+
 package tests;
 
 import base.BaseTest;
@@ -23,12 +24,12 @@ public class AssignmentsTest extends BaseTest {
         // 3. Setup Data
 
         String cleaner = "Jake Cleaner2";
-        String site = "udugama";
+        String site = "jaffna";
 
         // 4. Create (Engage Link)
         System.out.println("Engaging new deployment link for: " + cleaner);
         assignmentsPage.createAssignment(cleaner, site);
-        Assert.assertTrue(assignmentsPage.isDeploymentPresent(cleaner, site), "Deployment එක නිර්මාණය වුණේ නැත!");
+        Assert.assertTrue(assignmentsPage.isDeploymentPresent(cleaner, site), "Deployment ");
 
         // 5. Toggle Status
         System.out.println("Toggling protocol status for: " + cleaner);
@@ -38,7 +39,7 @@ public class AssignmentsTest extends BaseTest {
         // 6. Delete (Terminate)
         System.out.println("Terminating deployment protocol...");
         assignmentsPage.terminateDeployment(cleaner);
-        Assert.assertFalse(assignmentsPage.isDeploymentPresent(cleaner, site), "Deployment එක සාර්ථකව ඉවත් වුණේ නැත!");
+        Assert.assertFalse(assignmentsPage.isDeploymentPresent(cleaner, site), "Deployment ");
 
         System.out.println("Assignments (Deployment Matrix) automation successful!");
     }

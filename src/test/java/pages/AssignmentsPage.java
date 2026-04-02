@@ -1,3 +1,5 @@
+
+
 package pages;
 
 import org.openqa.selenium.*;
@@ -44,15 +46,15 @@ public class AssignmentsPage {
         waitForLoading();
         WaitUtils.waitForElementToBeClickable(driver, newDeploymentBtn, 15).click();
 
-        // Cleaner Dropdown (Partial Text Matching)
+
         WebElement cleanerEl = WaitUtils.waitForElementVisible(driver, cleanerDropdown, 10);
         selectDropdownByPartialText(cleanerEl, cleanerPartialName);
 
-        // Site Dropdown  (Partial Text Matching)
+
         WebElement siteEl = driver.findElement(siteDropdown);
         selectDropdownByPartialText(siteEl, sitePartialName);
 
-        // Form  submit
+
         try {
             driver.findElement(engageLinkBtn).click();
         } catch (Exception e) {
@@ -76,7 +78,7 @@ public class AssignmentsPage {
         }
 
         if (!found) {
-            throw new NoSuchElementException("Dropdown එකේ '" + partialText + "' අඩංගු අගයක් සොයාගත නොහැකි විය.");
+            throw new NoSuchElementException("Dropdown  '" + partialText + "' ");
         }
     }
 
